@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Eyes2eyes</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <p class="header__title">eyes <span class="title__color--red">2</span> eyes</p>
+
+            <ul class="navbar__list">
+                <li class="list__item">
+                    <a href="#" class="navbar__link">accueil</a>
+                </li>
+                <li class="list__item">
+                    <a href="#" class="navbar__link">à propos</a>
+                </li>
+                <li class="list__item">
+                    <a href="#gallery" class="navbar__link">gallery</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section-heading">
+            <div class="section__item section__item--left">
+                <h1 class="section-heading__title">you don't take a photograph, you make it.</h1>
+                <p class="section-heading__author">ansel adams</p>
+
+                <div class="section-heading__social">
+                    <i class="fa-brands fa-facebook fa-2x"></i>
+                    <i class="fa-brands fa-facebook-messenger fa-2x"></i>
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                    <i class="fa-brands fa-tiktok fa-2x"></i>
+                </div>
+            </div>
+
+            <div class="section__item section__item--right section-item__img"></div>
+            <div class="clear"></div>
+        </section>
+
+        <!-- gallery - highlights -->
+        <section class="section-gallery" id="gallery">
+            <h2 class="section-gallery__title">highlights</h2>
+
+            <div class="section__item section__item--left">
+                <article class="card">
+                    <div class="card__item">
+                        <img src="assets/img/beaver-rat-g24a21b83d_1920.jpg" alt="ragondin" class="card__img">
+                    </div>
+                    <h3 class="card__title">Exposition <br>Nouvelle-Calédonie</h3>
+                    <p class="card__txt">2018 Paris</p>
+                </article>
+            </div>
+
+            <div class="section__item section__item--right">
+                <article class="card">
+                    <div class="card__item">
+                        <img src="assets/img/dog-gb686481b7_1920.jpg" alt="labrador" class="card__img">
+                    </div>
+                    <h3 class="card__title">Exposition Banksy</h3>
+                    <p class="card__txt">2021 Amsterdam</p>
+                </article>
+            </div>
+            <div class="clear"></div>
+        </section>
+
+        <!-- actus -- salon -->
+        <section class="section-actus">
+            <div class="section__item section__item--left">
+                <img src="assets/img/architecture-g9f699e7fe_1920.jpg" alt="tour eiffel" class="section-actus__img">
+            </div>
+
+            <div class="section__item section__item--right">
+                <h3 class="section-actus__title">Salon de la photographie à Paris</h3>
+                <p class="section-actus__txt">Je serai présent à l'édition 2023 du Salon de la Photographie à Paris,
+                    vous me retrouverez au stand Nikon</p>
+                <a href="https://www.lesalondelaphoto.com/" class="btn">Lien</a>
+            </div>
+
+            <div class="clear"></div>
+        </section>
+
+        <!-- contact form -->
+        <section class="section-contact">
+            <h2 class="section-contact__title">Me contacter</h2>
+            <form action="#" class="contact-form">
+                <div class="section__item section__item--left">
+                    <div class="contact-form__item">
+                        <label for="name" class="contact-form__label">Nom/Prénom</label>
+                        <input type="text" id="name" placeholder="Votre Nom/Prénom" class="contact-form__input">
+                    </div>
+                </div>
+
+                <div class="section__item section__item--right">
+                    <div class="contact-form__item">
+                        <label for="email" class="contact-form__label">Email</label>
+                        <input type="email" id="email" placeholder="Email" class="contact-form__input">
+                    </div>
+                </div>
+                <div class="clear"></div>
+
+                <div class="contact-form__item">
+                    <label for="objet" class="contact-form__label">Objet</label>
+                    <input type="text" id="objet" placeholder="Objet du message" class="contact-form__input">
+                </div>
+                <div class="contact-form__item">
+                    <label for="msg" class="contact-form__label">Votre message</label>
+                    <textarea name="msg" id="msg" cols="30" rows="10" class="contact-form__textarea"
+                        placeholder="Message"></textarea>
+                </div>
+
+                <input type="submit" value="Envoyer" class="btn">
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <small class="footer__txt">&copy; - TDR - Axel Saint-Louis - 2023</small>
+    </footer>
+    
+    <script src="https://kit.fontawesome.com/4ec43a1057.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

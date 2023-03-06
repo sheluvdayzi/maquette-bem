@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Noto+Sans:wght@400;500;600;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    transition: .5s;
+    border-radius: 4px;
+}
+
+html{
+    font-size: 62.5%; /* = 10px */
+}
+
+body{ /* réglage des paragraphes */
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 2.5rem; /* = 25px */
+}
+
+.header .header__title,
+.section-heading__author,
+.section-gallery__title,
+.section-contact_title{
+    font-family: 'Caveat', cursive;
+}
+
+.header .header__title{
+    font-size: 5rem;
+}
+
+/* HEADER */
+.header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #ffffffde;
+}
+
+.header{
+    text-transform: capitalize;
+}
+
+.navbar .header__title,
+.navbar .navbar__list{
+    display: inline-block;
+    width: 49%;
+}
+
+.navbar .title__color--red{
+    color: red;
+}
+
+.navbar .navbar__list{ /* UL */
+    text-align: right;
+    list-style-type: none;
+}
+
+.navbar .list__item{ /* LI */
+    display: inline-block;
+    width: 30%;
+}
+
+.navbar__link{ /* <a> */
+    text-decoration: none;
+    font-size: 2rem;
+    color: #000;
+}
+
+/* MAIN */
+.section-heading,
+.section-gallery,
+.section-actus,
+.section-contact{
+    margin: 10% 0;
+}
+
+.section-heading__title,
+.section-actus__title,
+.section-contact__title{
+    font-size: 4.6rem;
+    font-weight: 800;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* 1- header */
+.section-heading__title{
+    padding: 0 10% 0 0;
+}
+
+.section-heading__author{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+
+.section__item{
+    width: 50%;
+}
+
+.section__item--left{
+    float: left;
+}
+
+.section__item--right{
+    float: right;
+}
+
+/* pour positionner les icônes des reseaux sociaux en bas du cinteneur */
+.section-headnig .section__item--left{
+    position: relative;
+    height: 47vh;
+}
+
+.section_heading__social{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.section-heading__social .fa-brands{
+    padding: 0 3%;
+}
+
+.section-item__img{
+    height: 47vh;
+    background: url('../img/dickens-lin-Nr7QqJIP8Do-unsplash.jpg') no-repeat center;
+    background-size: cover;
+}
+/* 2- gallery */
+.section-gallery__title,
+.section-contact__title{
+    text-align: center;
+}
+
+.section-gallery .card{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card__item .card__img{
+    width: 100%;
+    height: 38vh;
+    object-fit: cover;
+}
+
+.card__title{
+    font-size: 3rem;
+}
+
+/* 3- actus */
+.section-actus .section-actus__img{
+     height: 47vh;
+     width: 100%;
+     object-fit: cover;
+}
+
+.section-actus .section__item--right{
+    padding: 0 0 0 4%;
+}
+
+.section-actus__txt{
+    padding: 0 0 0 10%;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: red;
+    font-size: 2.2rem;
+    font-weight: 400;
+    padding: 3% 14%;
+    outline: none;
+    border: 2px solid red;
+    margin: 5% 0 2%;
+}
+
+.btn:hover{
+    background-color: #ff00006e;
+}
+
+.section-actus .btn{
+    margin: 5% 0 0 10%;
+}
+
+/* 4- contact-form */
+.section-contact__title{
+    border-bottom: 3px solid red;
+    margin: 0 0 4% 0;
+}
+
+.contact-form{
+    width: 70%;
+    margin: 0 auto;
+    color: #fff;
+    background-color: #000;
+    padding: 3%;
+}
+
+.contact-form__label{
+    font-size: initial;
+    display: block;
+    margin: 5% 0 2%;
+}
+
+.contact-form .contact-form__input,
+.contact-form .contact-form__textarea{
+    width: 100%;
+}
+
+.section__item--left .contact-form__item{
+    margin: 0 2% 0 0;
+}
+
+.section__item--right .contact-form__item{
+    margin: 0 0% 0 2%;
+}
+
+.contact-form__input{
+    border: none;
+}
+
+.contact-form__input,
+.contact-form__textarea{
+    width: 100%;
+    background-color: #000000b3;
+    color: #fff;
+    padding: 2%;
+    border-bottom: 2px inset #a29C9C;
+    outline: none;
+}
+
+.contact-form__input:focus,
+.contact-form__textarea:focus{
+    border: 2px inset red;
+}
+
+/* FOOTER */
+.footer{
+    margin: 10% 0 0;
+}
+
+.footer__txt{
+    display: block;
+    padding: 3%;
+    border-top: 3px solid red;
+    text-align: center;
+}
+
+
+
+
+.clear{
+    clear: both;
+}
